@@ -87,4 +87,4 @@ def gen_short_url():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5010)
+    app.run(debug=True, host=APP_HOST, port=APP_PORT)

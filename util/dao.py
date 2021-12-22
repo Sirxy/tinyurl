@@ -5,6 +5,8 @@ from DBUtils.PooledDB import PooledDB, SharedDBConnection
 from util.log import logger
 
 
+# 单例模式
+# 装饰器：装饰MySQL类，令其成为单例类
 def singleton(cls):
     instances = {}
 
@@ -16,6 +18,7 @@ def singleton(cls):
     return get_instance
 
 
+# 装饰器：函数或方法的执行时间
 def execute_time(func):
 
     @wraps(func)
@@ -33,6 +36,7 @@ def execute_time(func):
     return inner
 
 
+# 单例MySQL类：实例化多少次都是一个MySQL对象
 @singleton
 class MySQL(object):
     # 操作MySQL数据库
