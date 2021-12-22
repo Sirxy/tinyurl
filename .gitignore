@@ -1,0 +1,36 @@
+# 说明：一般地，被过滤掉的文件不会出现在 gitlab 仓库中
+
+# 忽略掉所有文件名是 .js .json 的文件
+*.js
+*.json
+
+# 忽略掉 .idea 文件夹的内容
+.idea/
+
+# 忽略掉文件名是 .log 的文件
+*.log
+
+忽略所有 html文件
+*.html
+
+忽略所有 tmp.py 文件
+tmp*.py
+
+# 忽略掉 .zip .rar 压缩文件
+*.zip
+*.rar
+
+__pycache__/
+api_document/
+
+# environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+*.out
+*.bak
